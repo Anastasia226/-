@@ -78,6 +78,11 @@ nav .items {
 #news {
   margin-top: 66px;
 }
+#news .icon-arrow {
+  fill: #fff;
+  height: 22px;
+  width: 22px;
+}
 #news .icon {
   fill: #4d4d4d;
   height: 22px;
@@ -91,10 +96,12 @@ aside .text-call {
   line-height: 19px;
   color: #4d4d4d;
 }
+aside .news-call {
+  margin-top: -130px;
+}
 aside .items-call {
   display: flex;
   justify-content: flex-end;
-  margin-top: -130px;
   text-align: right;
 }
 aside .item-call {
@@ -102,9 +109,61 @@ aside .item-call {
 }
 aside .news-block {
   position: relative;
-  width: 710px;
+  width: 740px;
   height: 130px;
   background: #277e89;
+}
+#news .page-news {
+  /* display: flex; */
+  margin-top: 35px;
+}
+#news .page {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+#news .page .page-news-active {
+  color: #ee7430;
+}
+#news .news-page-split {
+  width: 67px;
+  height: 3px;
+  margin-top: -3px;
+  margin-left: 18px;
+  background: #ffffff;
+  transform: rotate(-90deg);
+  border: none;
+}
+#news .text-news .text {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+#news .text-news {
+  margin-top: 30px;
+  margin-left: 10px;
+}
+#news .text-news .data {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 20px;
+}
+#news .news-arrow {
+  margin-top: 54px;
+  cursor: pointer;
 }
 .about {
   margin-top: 190px;
@@ -273,6 +332,158 @@ aside .news-block {
   line-height: 57px;
   text-transform: uppercase;
   color: #277e89;
+}
+.feedback .rewiew-block-1 {
+  position: relative;
+  width: 200px;
+  height: 150px;
+  background: #ee7430;
+  margin-top: 89px;
+  left: calc(43% + 15px);
+}
+.feedback .rewiew-block-2 {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background: #277e89;
+  margin-top: -185px;
+  z-index: 0;
+}
+.feedback .rewiew-block-3 {
+  position: relative;
+  width: 200px;
+  height: 150px;
+  background: #277e89;
+  margin-top: 89px;
+  left: calc(43% + 15px);
+}
+.feedback .rewiew {
+  position: relative;
+
+  padding: 30px;
+  background: #ffffff;
+  border: 1px solid #ee7430;
+  box-sizing: border-box;
+  box-shadow: 10px 10px 10px rgba(77, 77, 77, 0.15);
+}
+.feedback .rewiew-1 {
+  border-radius: 0px 0px 150px 0px;
+  margin-top: -135px;
+}
+.feedback .rewiew-2 {
+  border-radius: 0px 150px 0px 0px;
+  margin-top: 60px;
+  z-index: 2;
+  margin-left: 15px;
+}
+.feedback .rewiew-3 {
+  background: #ee7430;
+  box-shadow: 10px 10px 10px rgba(77, 77, 77, 0.15);
+  border-radius: 0px 0px 150px 0px;
+  margin-top: -135px;
+}
+.feedback .rewiew-person {
+  display: flex;
+}
+.feedback .rewiew-person .photo img {
+  border-radius: 400px;
+  margin-right: 15px;
+}
+.feedback .rewiew-person .rewiew-info .name {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: #277e89;
+  margin-bottom: 10px;
+}
+.feedback .rewiew-person .rewiew-info .name-3 {
+  color: #4d4d4d;
+}
+.feedback .rewiew-person .rewiew-info .company {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #4d4d4d;
+  margin-bottom: 14px;
+}
+.feedback .rewiew-person .rewiew-info .company-3 {
+  color: #ffffff;
+}
+.feedback .rewiew-person .rewiew-info .data {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 12px;
+  line-height: 14px;
+  color: #4d4d4d;
+}
+.feedback .rewiew-person .rewiew-info .data-3 {
+  color: #ffffff;
+}
+.feedback .rewiew-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 30px;
+  margin-top: 15px;
+  color: #4d4d4d;
+}
+.feedback .rewiew-text-3 {
+  color: #ffffff;
+}
+.feedback .rewiew-theme {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-decoration-line: underline;
+}
+.feedback .rewiew-theme-1 {
+  color: #ee7430;
+}
+.feedback .rewiew-theme-2 {
+  color: #277e89;
+}
+.feedback .rewiew-theme-3 {
+  color: #4d4d4d;
+}
+.feedback .rewiew-page {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 45px;
+}
+.feedback .rewiew-page .page {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 43px;
+  text-transform: uppercase;
+  color: #4d4d4d;
+}
+.feedback .rewiew-page .page .page-active {
+  color: #ee7430;
+}
+.feedback .rewiew-page .icon {
+  fill: #4d4d4d;
+  height: 25px;
+  width: 25px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.feedback .rewiew-page .icon-back {
+  transform: rotate(180deg);
+  margin-right: 30px;
+}
+.feedback .rewiew-page .icon-front {
+  margin-left: 30px;
 }
 .request {
   margin-top: 496px;

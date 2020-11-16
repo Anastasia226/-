@@ -33,4 +33,7 @@
    <symbol  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 35" id="facebook">
     <path d="M15.761 17.466h-4.786V35h-7.25V17.466H.274v-6.162h3.45V7.317C3.724 4.465 5.078 0 11.04 0l5.371.022v5.982h-3.897c-.64 0-1.538.32-1.538 1.68v3.626h5.419l-.634 6.156z" ></path>
   </symbol>
+    <symbol  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 22" id="arrow">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M.072 21.429l10.715-10.715L.072 0v21.43z" ></path>
+  </symbol>
 </svg>
