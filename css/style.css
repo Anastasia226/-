@@ -178,6 +178,7 @@ aside .news-block {
 /* Лента слайдов */
 .slick-track {
   display: flex;
+  justify-content: justify-content-between;
 }
 .news-arrow .slick-next {
   background: transparent;
@@ -366,7 +367,8 @@ aside .news-block {
 }
 .feedback .rewiew {
   position: relative;
-
+  width: 50%;
+  margin: auto;
   padding: 30px;
   background: #ffffff;
   border: 1px solid #ee7430;
@@ -493,22 +495,28 @@ aside .news-block {
   margin-left: 30px;
 }
 .request {
-  margin-top: 496px;
+  margin-top: 90px;
 }
 .request-block {
   position: relative;
+  display: flex;
+  align-items: end;
   width: 520px;
   height: 146px;
   background: #277e89;
-}
-#request {
-  margin-top: -520px;
+  padding-left: 60px;
+  padding-top: 80px;
+  margin-left: -30px;
+  margin-top: -60px;
+  z-index: 1;
 }
 .request .image {
+  position: relative;
   filter: drop-shadow(10px 10px 15px rgba(77, 77, 77, 0.15));
   border-radius: 200px 0px;
   margin-top: 30px;
   width: 100%;
+  z-index: 2;
 }
 .request .request-head {
   text-align: right;
@@ -642,7 +650,6 @@ textarea::placeholder {
   text-align: right;
 }
 .partners .items {
-  display: flex;
   margin-top: 58px;
 }
 .partners .item {
@@ -717,8 +724,31 @@ textarea::placeholder {
 .footer .item-call {
   margin-left: 20px;
 }
+@media (max-width: 1200px) {
+  #info .block-text {
+    font-size: 38px;
+    line-height: 47px;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 991px) {
+  .footer .footer-call {
+    justify-content: flex-start;
+  }
+  .footer .item {
+    padding-left: 20px;
+  }
+  #info .block-text {
+    font-size: 38px;
+    line-height: 47px;
+    margin-top: 20px;
+  }
+  #info .items {
+    margin-top: 10px;
+  }
+}
 
-@media (max-width: 690px) {
+@media (max-width: 900px) {
   .menu-toggle {
     display: flex;
     flex-direction: column;
@@ -738,8 +768,14 @@ textarea::placeholder {
   }
   nav .visible {
     display: block;
-    text-align: right;
+    text-align: center;
     text-decoration: none;
+  }
+  .menu .item {
+    margin-bottom: 5px;
+  }
+  .menu-link {
+    padding-bottom: 5px;
   }
   .content .image {
     border-radius: 80px 0px;
@@ -845,14 +881,11 @@ textarea::placeholder {
   .feedback {
     margin-top: 90px;
   }
-  .request {
-    margin-top: 836px;
+  .feedback .rewiew {
+    width: 90%;
   }
   .request-block {
-    width: 75%;
-  }
-  #request {
-    margin-top: -850px;
+    width: 85%;
   }
   .request .image {
     border-radius: 80px 0px;
@@ -862,6 +895,7 @@ textarea::placeholder {
   }
   .request form {
     margin-top: 30px;
+    margin-left: 0;
   }
   .request form .btn {
     width: 181px;
@@ -886,9 +920,7 @@ textarea::placeholder {
     width: 22px;
     margin-right: 15px;
   }
-  .request .items-call {
-    display: flex;
-  }
+
   .contacts .contacts-item {
     margin-top: 30px;
   }
@@ -943,13 +975,11 @@ textarea::placeholder {
   .footer .name {
     font-size: 14px;
     line-height: 17px;
-    margin-bottom: 30px;
     margin-top: 15px;
   }
   .footer .copyright {
     font-size: 14px;
     line-height: 16px;
-    margin-bottom: 30px;
     margin-top: 15px;
   }
   .footer .footer-link {
@@ -969,10 +999,29 @@ textarea::placeholder {
     font-size: 16px;
     line-height: 19px;
     margin-top: 30px;
+    text-align: right;
   }
   .footer .item-call {
     margin-top: 15px;
     margin-left: 0;
     margin-right: 15px;
+  }
+}
+@media (max-width: 575px) {
+  .footer .footer-call {
+    justify-content: flex-end;
+  }
+  #info .items {
+    margin-top: 10px;
+    margin-left: 40%;
+  }
+  .request-block {
+    padding-left: 60px;
+    padding-top: 50px;
+  }
+}
+@media (max-width: 400) {
+  .request .items-call {
+    display: block;
   }
 }
