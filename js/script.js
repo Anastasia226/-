@@ -1,8 +1,6 @@
 let menuToggle = document.querySelector(".menu-toggle");
 let menu = document.querySelector("nav .items");
 let arrow = document.querySelector(".news-arrow");
-let widthRewiew_1 = $(".rewiew-1").innerWidth(); //ширина блока отзывов 1
-let widthRewiew_2 = $(".rewiew-3").innerWidth(); //ширина блока отзывов 3
 //меню для мобильной версии
 menuToggle.addEventListener("click", function (event) {
   event.preventDefault();
@@ -10,8 +8,6 @@ menuToggle.addEventListener("click", function (event) {
 });
 
 $(document).ready(function () {
-  $(".rewiew-block-1").css("left", widthRewiew_1 - 185);
-  $(".rewiew-block-3").css("left", widthRewiew_2 - 185);
   //слайдер новостей
   arrow.classList.toggle("slick-next");
   $(".slider-news").slick({
@@ -36,8 +32,8 @@ $(document).ready(function () {
   $(".page-news-active").text(currentSlide);
   //слайдер отзывов
   $(".slider-rewiew").slick({
-    slidesToShow: 1,
-    centerPadding: "-100px",
+    slidesToShow: 1.6,
+    centerPadding: "60px",
     centerMode: true,
     prevArrow: ` <svg class="icon icon-back slick-prev">
                 <use xlink:href="img/icons.svg#arrow"></use>
@@ -50,6 +46,7 @@ $(document).ready(function () {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
+          centerMode: false,
         },
       },
     ],
@@ -88,6 +85,4 @@ $(window).resize(function (e) {
   $(".rewiew-arrow-prev").append($(".slider-rewiew>.slick-prev"));
   $(".rewiew-arrow-next").append($(".slider-rewiew>.slick-next"));
   $(".news-arrow").append($(".slider-news>.slick-next"));
-  $(".rewiew-block-1").css("left", widthRewiew_1 - 185);
-  $(".rewiew-block-3").css("left", widthRewiew_2 - 185);
 });
